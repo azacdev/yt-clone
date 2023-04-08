@@ -3,7 +3,6 @@ import { Box, Stack, Typography } from "@mui/material"
 import { Videos, Sidebar} from './'
 import { fetchFromAPI } from "./utils/fetchFromAPI"
 
-
 const Feed = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('New')
