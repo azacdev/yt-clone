@@ -2,7 +2,7 @@ import React from 'react'
 import { Stack } from '@mui/material'
 import { categories } from './utils/constants'
 
-const Sidebar = ({selectedCategory,setSelectedCategory}) => (
+const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
     <Stack
       direction="row"
       sx={{
@@ -20,6 +20,7 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => (
           }
           key={category.name}
           >
+
           <span 
             style={{ color: category.name === selectedCategory ? 
               "white" : 
@@ -28,6 +29,7 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => (
           >
             {category.icon}
           </span>
+
           <span
             style={{ opacity: category.name === selectedCategory ? 
               "1" : 
@@ -36,6 +38,7 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => (
           >
             {category.name}
           </span>
+          
         </button>
       ))}
 
