@@ -27,7 +27,7 @@ const Feed = () => {
         </Typography>
       </Box>
 
-      <Box p={2} sx={{overflowY: 'auto', height: '90vh', flex: 2, borderRight: "1px solid #3d3d3d"}}>
+      <Box p={2} sx={{overflowY: 'auto', height: '90vh', flex: 2}}>
         <Typography
           variant="h4"
           fontWeight="bold"
