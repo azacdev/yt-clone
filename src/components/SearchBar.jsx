@@ -9,11 +9,11 @@ const SearchBar = () =>  {
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
-    e.prevent.Default()
+    e.preventDefault()
     if(searchTerm){
       navigate(`/search/${searchTerm}`)
     }
-    
+
     setSearchTerm('')
   }
 

@@ -13,6 +13,7 @@ const SearchFeed = () => {
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${searchTerm}`)
     .then(data => setVideos(data.items))
+    .catch( console.error('error'))
   }, [searchTerm])
 
   
