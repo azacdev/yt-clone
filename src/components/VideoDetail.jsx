@@ -23,7 +23,6 @@ const VideoDetail = () => {
   if (!videoDetail?.snippet) return 'Loading'
 
   const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount } } = videoDetail
-  // console.log(title);
 
   return (
     <Box minHeight={'95vh'}>
@@ -58,11 +57,12 @@ const VideoDetail = () => {
           </Box>
 
         </Box>
-      </Stack>
 
       <Box px={2} py={{ md: 1, xs: 5}} justifyContent="center" alignItems="center">
-        <Videos videos={videos}/>
+        <Videos videos={videos} direction="column"/>
       </Box>
+
+      </Stack>
     </Box>
   )
 }

@@ -13,7 +13,7 @@ const ChannelCard = ({ channelDetail, marginTop}) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: { xs: '356px', md: '320px' },
+        width: { xs: '345px', sm: '350px', md: '320px' },
         height: '326px',
         margin: 'auto',
         marginTop
@@ -21,7 +21,7 @@ const ChannelCard = ({ channelDetail, marginTop}) => {
     >
       
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
-        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', color: '#fff' }}>
+        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
           <CardMedia
             image={ channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture }
             alt={channelDetail?.snippet?.title}
